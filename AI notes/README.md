@@ -2,12 +2,6 @@
 
 Next.js app with **shadcn-style** structure, **Tailwind CSS**, and **TypeScript**. Includes the `AIVoiceInput` component in `components/ui`.
 
-## Recent Updates
-
-- ✅ Background color `#EEF0F6` applied to body element
-- ✅ Project organized in `AI notes` folder structure
-- ✅ Build artifacts (`.next`, `.DS_Store`) excluded from git tracking
-
 ## Project structure
 
 - **Components (UI):** `components/ui/` — reusable UI primitives (e.g. `ai-voice-input.tsx`)
