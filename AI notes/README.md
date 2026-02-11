@@ -2,6 +2,12 @@
 
 Next.js app with **shadcn-style** structure, **Tailwind CSS**, and **TypeScript**. Includes the `AIVoiceInput` component in `components/ui`.
 
+## Recent Updates
+
+- ✅ Background color `#EEF0F6` applied to body element
+- ✅ Project organized in `AI notes` folder structure
+- ✅ Build artifacts (`.next`, `.DS_Store`) excluded from git tracking
+
 ## Project structure
 
 - **Components (UI):** `components/ui/` — reusable UI primitives (e.g. `ai-voice-input.tsx`)
@@ -58,9 +64,28 @@ Open [http://localhost:3000](http://localhost:3000). The home page renders `AIVo
 |--------------------|-------------------|----------|--------------------------------------|
 | `onStart`          | `() => void`      | —        | Called when recording starts         |
 | `onStop`           | `(duration) => void` | —     | Called when recording stops (seconds)|
-| `visualizerBars`   | `number`          | `48`     | Number of bars in the visualizer     |
+| `visualizerBars`   | `number`          | `6`      | Number of bars in the visualizer     |
 | `demoMode`         | `boolean`         | `false`  | Auto-run recording animation         |
 | `demoInterval`     | `number`          | `3000`   | Demo “recording” length (ms)         |
 | `className`        | `string`          | —        | Extra class names                    |
 
 **Dependencies:** `lucide-react` (Mic icon), `@/lib/utils` (cn). No image assets; responsive via Tailwind.
+
+## Design
+
+- **Background Color:** `#EEF0F6` (applied to body element)
+- **Visualizer Color:** `#859933` (active), `rgba(133, 153, 51, 0.25)` (inactive)
+- **Animation:** Smooth transitions with CSS animations and requestAnimationFrame for visualizer bars
+
+## Repository Structure
+
+```
+micro-animations/
+└── AI notes/
+    ├── app/
+    ├── components/
+    ├── lib/
+    └── ... (all project files)
+```
+
+The project is organized within the `AI notes` folder in the GitHub repository.
