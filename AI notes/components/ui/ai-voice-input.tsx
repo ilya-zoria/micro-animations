@@ -109,11 +109,15 @@ export function AIVoiceInput({
 
         <span
           className={cn(
-            "font-mono text-sm transition-opacity duration-300",
+            "transition-opacity duration-300",
             submitted
               ? "text-black/70 dark:text-white/70"
-              : "text-black/30 dark:text-white/30"
+              : "text-black dark:text-white"
           )}
+          style={{
+            fontFamily: "system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            fontSize: "24px"
+          }}
         >
           {formatTime(time)}
         </span>
